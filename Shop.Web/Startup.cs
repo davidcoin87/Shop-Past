@@ -38,6 +38,10 @@ namespace Shop.Web
             //llama al SeedDb para alimentar automaticamente a las entidades
             services.AddTransient<SeedDb>();
 
+            //video zuluaga #9, se engaña la base datos para que muestre informacion ficticia
+            //services.AddScoped<IRepository, MockRepository>();
+            services.AddScoped<IRepository, Repository>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
