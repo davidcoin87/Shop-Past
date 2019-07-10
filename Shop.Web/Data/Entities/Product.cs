@@ -30,6 +30,9 @@ public class Product
 
 	[DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = false)]
 	public double Stock { get; set; }
+
+    //creo una realcion foreing key con la tabla usuario por medio del nombramiento aqui
+    public User User { get; set; }
 }
 
 }
